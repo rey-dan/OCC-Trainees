@@ -1,0 +1,136 @@
+1) Identify the entities involved in the e-commerce platform, such as customers, products, categories, orders, and reviews.
+Users
+Products
+Payment
+Orders
+Shipping
+Reviews
+
+
+2) Determine the relationships between these entities and define the cardinality of each relationship (one-to-one, one-to-many, or many-to-many).
+Users - Products: many-to-many
+Users - Payment: one-to-many
+Users - Orders: one-to-many
+Users - Shipping: one-to-many
+Products - Orders: many-to-many
+Payment - Orders: one-to-one
+Orders - Shipping: one-to-one
+Users - Reviews: one-to-many
+Products - Reviews: one-to-many
+
+
+3) Design a data model using either the embedded or reference approach based on the following requirements:
+ a. Customers can place multiple orders, and each order can contain multiple products. 
+    {
+        customer": {
+        "customer_id": "00001",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "address": "123 Main St, City, Country",
+        "phone": "123-456-7890",
+        "orders": [
+        {
+            "order_id": "ORD-001",
+            "date": "2023-06-19",
+            "status": "Shipped",
+            "products": [
+            {
+                "product_id": "P1",
+                "name": "Product 1",
+                "price": 10.99,
+                "quantity": 2
+            },
+            {
+                "product_id": "P2",
+                "name": "Product 2",
+                "price": 19.99,
+                "quantity": 1
+            }
+            ]
+        },
+        {
+            "order_id": "ORD-002",
+            "date": "2023-06-20",
+            "status": "Processing",
+            "products": [
+            {
+                "product_id": "P3",
+                "name": "Product 3",
+                "price": 15.99,
+                "quantity": 3
+            }
+            ]
+        }
+        ]
+    }
+    }
+
+
+ b. Each product belongs to a specific category, and a category can have multiple products. 
+    {
+        "_ObjectId": "0002",
+        "name": "Electronics",
+    }
+
+    {
+        "_ObjectId": "12345",
+        "name": "Xperia Z5 Compact",
+        "description": "Lorem ipsum ...",
+        "price": 19.99,
+        "category_id": "0002"
+    }
+
+
+ c. Customers can write reviews for products, and each product can have multiple reviews.
+    {
+        "customer_id": "00001",
+        "name": "John Doe",
+        "email": "john@example.com",
+        "address": "123 Main St, City, State"
+    }
+
+    {
+        "product_id": "P-001",
+        "name": "Xperia z5 Compact",
+        "description": "Lorem ipsum ...,
+        "price": 19.99
+    }
+
+    {
+        "review_id": "R-001",
+        "customer_id": "00001",
+        "product_id": "P001",
+        "rating": 4,
+        "comment": "Great product!"
+    }
+
+4) Decide on the key attributes for each entity and incorporate them into the data model.
+    Users: customer_id 
+    Products: product_id
+    Payment: payment_id
+    Orders: order_id
+    Shipping: shipping_id
+    Reviews: review_id
+
+5) Consider the data access patterns and query requirements for the e-commerce platform. Ensure that the data model supports efficient and effective data retrieval.
+
+
+
+Advanced Querying & Query Projections
+
+Examples of query operators include:
+Comparison operators: $eq, $ne, $gt, $lt, $gte, $lte
+Logical operators: $and, $or, $not, $nor
+Array operators: $in, $nin, $all, $size, $elemMatch
+Regular expression operator: $regex
+Existence operators: $exists
+Type operators: $type
+
+Utilizing aggrgate functions:
+
+$match: Filters documents based on specified conditions.
+$group: Groups documents by a specific field and calculates aggregate values.
+$sort: Sorts documents based on specified fields and sort orders.
+$project: Shapes the output of the aggregation pipeline by including or excluding fields.
+$limit: Limits the number of documents in the output.
+$skip: Skips a specified number of documents in the output.

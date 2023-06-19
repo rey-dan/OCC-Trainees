@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+    img{
+        width: 500px;
+        margin-right: 800px;
+        margin-top: 50px;
+    }
+
+    
+    header{
+        background-color: rgb(104, 36, 48);
+    }
+
+    body{
+        background-color: rgb(245, 210, 215);
+    }
+
+    p{
+        width: 700px;
+    }
+
+    ul{
+        margin: 50px;;
+        width: 200px;
+        list-style-type: none;
+    }
+
+    div{
+       display: inline-block;
+    }
+
+        .notes{
+            position: absolute;
+            right: 100px;
+            bottom: 400px;
+        }
