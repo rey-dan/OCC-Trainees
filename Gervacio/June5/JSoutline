@@ -1,0 +1,47 @@
+I. Vanilla Javascript
+	A. What is Javascript
+	B. What is Vanilla Javascript
+	C. Why use Javascript
+	D. To-do list sample project
+		
+II. Exporting external files and sources
+	A. Visual Studio
+		1. Create index.html
+		2. Generate HTML' boiler plate by using emmet abbreviation
+		3. launch file to live server
+	B. Export google font
+		1. Go to fonts.google.com
+		2. Pick any font you want or for this demo let's look up (Poppins)
+		3. Indicate font link in index.html file's header
+	C. Export CSS and Javascript file by indicating their file links in the header
+	D. Export icons from fontawesome.com
+		1. Look up for the icon you need
+		2. Click the icon to get details
+		3. Push "Start using this icon" and copy the i tag to clipboard
+	E. Export javascript file at the bottom of the body tag
+	
+III. HTML
+	A. Header
+	B. Form
+	C. todo-container div
+		
+IV. CSS
+	A. Normalization
+	B. Body
+	C. header
+	D. form
+	E. form input
+	F. form button
+		
+V. Javascript	
+	A. Selectors
+	B. Event listeners
+	C. Functions:
+		1. Add item on list
+		2. Delete item from list
+		3. Mark item as complete
+		4. Categorized list by status
+		5. Add list to local storage		
+		
+
+	 			
