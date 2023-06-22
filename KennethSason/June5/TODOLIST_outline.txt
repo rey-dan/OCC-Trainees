@@ -1,0 +1,99 @@
+<<<<<<< HEAD
+
+I. Start with creating the project directory. 
+=======
+I. Todo list 
+	A. What are we going to make?
+	B. Why are we doing it?
+	C. How do we do it?
+II. Start with creating the project directory. 
+>>>>>>> ada0ef1a7b717989f1f41c889524d4168782fd40
+	A. Create the starting files.
+	 1. make a working directory with a name todo list
+	 2. go inside the folder.
+	 3. create an html file. 
+	 4. create a js file.
+	 5. create the css file. 
+	B. Open Vs code
+	C. Setting up the html file.
+	 1. Start by creating html boilerplate.
+	 2. add the links for fontawesome, google fonts.
+	 3. connect the css file.
+	 4. connect the js file. 
+<<<<<<< HEAD
+II. Create the html file structure.
+=======
+III. Create the html file structure.
+>>>>>>> ada0ef1a7b717989f1f41c889524d4168782fd40
+	A. Organizing the html tags in the html file.
+	  1. Make the header tag.
+		1a) add h1 tag inside.
+	  2. Add the form
+		2a) add an input tag with a class todo-input.
+		2b) add a button with a class of todo-button.
+		2c) add the <i class="fas fa-plus-square"></i> inside the button tags.
+	  3. Adding the div for containing the list items.
+	  	3a) create <div class="todo-container"></div>
+		3b) put <ul class="todo-list"></ul> inside the todo-container div
+<<<<<<< HEAD
+III. Applying CSS styles.
+=======
+IV. Applying CSS styles.
+>>>>>>> ada0ef1a7b717989f1f41c889524d4168782fd40
+	 A. Remove the default styling
+	 B  Applying css styles.
+		1 select the body to apply styles.
+			1a) background-image: linear-gradient(120deg, #e3c35d, #d88771);
+			1b) color: white;
+			1c) font-family: "Poppins", sans-serif;
+			1d) min-height: 100vh;
+		2. apply styles to  the header
+			2a)font-size: 1.5rem;
+		3. apply styles for both header, and form 
+			3a) min-height: 20vh;
+  			3b) display: flex;
+  			3c) justify-content: center;
+  			3d) align-items: center;
+<<<<<<< HEAD
+	 	
+
+IV. Adding JS functionalities
+=======
+		4. apply styles to the form and the elements inside.
+		5. Style the .todo-container div 
+	 	
+
+V. Adding JS functionalities
+>>>>>>> ada0ef1a7b717989f1f41c889524d4168782fd40
+	A. define these variables
+		1.const todoInput = document.querySelector(".todo-input");
+		2.const todoButton = document.querySelector(".todo-button");
+		3.const todoList = document.querySelector(".todo-list");
+		4.const filterOption = document.querySelector(".filter-todo");
+<<<<<<< HEAD
+	B. Add an event to the todoButton 
+=======
+	B. Adding an event to the todoButton 
+>>>>>>> ada0ef1a7b717989f1f41c889524d4168782fd40
+		1.todoButton.addEventListener("click", addTodo);
+		2. create addTodo function
+		3  //this function adds an item to the list 
+	C. Adding an event to the todoList 
+		1. todoList.addEventListener("click", deleteCheck);
+		2. creating the deleteCheck function.
+<<<<<<< HEAD
+=======
+	D. adding an event to the filterOption 
+		1. filterOption.addEventListener("click", filterTodo);
+		2. create the filterTodo function.
+	E. Saving the data in the browser's local storage.
+		1. make a function function saveLocalTodos(todo){}
+	F. Retrieving the data from the browser once the content is loaded.
+		1. document.addEventListener("DOMContentLoaded", getTodos);
+		2. define the function getTodos
+
+>>>>>>> ada0ef1a7b717989f1f41c889524d4168782fd40
+	
+	
+	 
+		
